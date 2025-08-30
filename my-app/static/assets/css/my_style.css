@@ -3,31 +3,32 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #ade8f4, #90e0ef); /* Fondo degradado fresco */
-  color: #1b1b1b;
+  background: linear-gradient(135deg, #6a0dad, #00ff99); /* Degradado morado-verde neón */
+  color: #ffffff;
 }
 
 /* --------------------- BOTONES --------------------- */
 .btn-primary {
-  background-color: #ff6b6b !important; /* Rojo coral */
+  background-color: #8e44ad !important; /* Morado fuerte */
   border: none !important;
-  color: #fff;
+  color: #00ff99;
   font-weight: 600;
   transition: 0.3s;
 }
 
 .btn-primary:hover {
-  background-color: #ff4757 !important;
+  background-color: #00ff99 !important; /* Verde neón */
+  color: #8e44ad;
   transform: scale(1.05);
 }
 
 /* --------------------- MENÚ LATERAL --------------------- */
 .menu-vertical .bx-menu {
-  background-color: #576574 !important; /* Gris azulado */
-  color: #fff;
+  background-color: #4b0082 !important; /* Morado oscuro */
+  color: #00ff99;
   padding: 12px;
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5);
 }
 
 .menu-vertical,
@@ -35,66 +36,67 @@ body {
 .menu-vertical .menu-inner > .menu-item,
 .menu-vertical .menu-inner > .menu-header {
   width: 18rem !important;
-  background-color: #f1f2f6; /* Fondo claro para menú */
+  background-color: #2c003e; /* Fondo oscuro del menú */
   border-radius: 15px;
 }
 
 .menu-vertical .menu-item.active:not(.open) > .menu-link {
   font-size: 15px !important;
   font-weight: 700;
-  color: #ff6b6b !important;
+  color: #00ff99 !important;
 }
 
 /* --------------------- TABLAS --------------------- */
 .colorTheadTrTh {
-  background-color: #ff6b6b !important;
-  color: #fff !important;
+  background-color: #8e44ad !important; /* Morado botones */
+  color: #00ff99 !important;
   text-transform: uppercase;
 }
 
 tbody tr {
-  border-bottom: 1px solid #dcdde1 !important;
-  background-color: #f7f9fa;
+  border-bottom: 1px solid #551a8b !important;
+  background-color: #3d0052;
 }
 
 tbody tr:hover {
-  background-color: #ffe6e6;
+  background-color: #00ff99;
+  color: #4b0082;
   cursor: pointer;
 }
 
 /* --------------------- ALERTAS --------------------- */
 .alert-success {
-  background-color: #1dd1a1 !important; /* Verde menta brillante */
-  color: #fff !important;
+  background-color: #00ff99 !important; /* Verde neón */
+  color: #4b0082 !important;
 }
 
 /* --------------------- LOADER --------------------- */
 #loader-out, .loader {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #loader-container {
   width: 150px;
   height: 150px;
-  color: #fff;
+  color: #00ff99;
   margin: 0 auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 6px solid #ff6b6b;
+  border: 6px solid #8e44ad;
   border-radius: 50%;
   animation: borderScale 1s infinite ease-in-out;
 }
 
 @keyframes borderScale {
-  0% { border: 6px solid #ff6b6b; }
-  50% { border: 18px solid #ff4757; }
-  100% { border: 6px solid #ff6b6b; }
+  0% { border: 6px solid #8e44ad; }
+  50% { border: 18px solid #00ff99; }
+  100% { border: 6px solid #8e44ad; }
 }
 
 #loading-text {
-  color: #ff6b6b;
+  color: #00ff99;
   font-size: 1.5em;
   position: absolute;
   top: 50%;
@@ -104,23 +106,25 @@ tbody tr:hover {
 
 /* --------------------- FORMULARIOS --------------------- */
 .input_vacio {
-  border-color: #ee5253 !important;
-  background-color: #ffecec !important;
+  border-color: #ff00ff !important; /* Fucsia brillante */
+  background-color: #330033 !important;
+  color: #00ff99;
 }
 
 .input_lleno {
-  border-color: #0abde3 !important;
-  background-color: #e0f7fa !important;
+  border-color: #00ff99 !important;
+  background-color: #330066 !important;
+  color: #ffffff;
 }
 
 /* --------------------- OTROS ESTILOS --------------------- */
 .bi-arrow-left-circle:hover {
-  color: #ff4757;
+  color: #00ff99;
 }
 
 .pesos {
-  background-color: #ff6b6b;
-  color: #fff;
+  background-color: #8e44ad;
+  color: #00ff99;
   padding: 3px 6px;
   border-radius: 12%;
   margin-right: 8px;
@@ -132,23 +136,11 @@ tbody tr:hover {
 
 #informe_general:hover {
   cursor: pointer;
-  border-bottom: dotted 1px #ff6b6b;
+  border-bottom: dotted 1px #00ff99;
 }
 
 #search {
   min-width: 44% !important;
-  background-color: #dff6ff !important;
+  background-color: #330033 !important;
+  color: #00ff99 !important;
 }
-
-/* --------------------- RESPONSIVE --------------------- */
-@media (min-width: 1400px) {
-  .container-xxl,
-  .container-xl,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 95% !important;
-  }
-}
-
