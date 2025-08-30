@@ -20,7 +20,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11'  # Cambia a tu versión de Python si es necesario
+        python-version: '3.11'  # Cambia según tu versión
 
     # 3. Instalar dependencias
     - name: Install dependencies
@@ -44,4 +44,5 @@ jobs:
       with:
         name: test-report
         path: report.xml
+
 
